@@ -1,0 +1,333 @@
+body {
+  background-image: url('../img/street.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ #canvas{
+  padding-top: 200px;
+  margin: auto;
+  display: block;
+  /* width: 300px;
+  height: 600px; */
+} 
+.retryBtn {
+  background-color: #ecf151;
+  border: #ffee00;
+  position: absolute;
+  top: 150px;
+  right: 300px;
+  font-size: 20px;
+}
+
+.saveBtn {
+  background-color: #fbff06;
+  border: #ffee00;
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  font-size: 20px;
+}
+
+.clothes-selector {
+  /* background-image: url('../img/base.png'); */
+  position: relative;
+  background-repeat: no-repeat;
+  /* width: 250px;
+  height: 650px;  */
+  background-position: center;
+  margin-top: 200px;
+}
+
+.selector {
+  height: 33%;
+  width: 100%;
+}
+
+.cap-selector {
+  /* display: none; */
+}
+
+.cap {
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.cap-selector1 {
+  background-image: url(../img/cap1.png);
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  right: 620px;
+  bottom: 360px;
+  background-repeat: no-repeat;
+}
+
+.cap-selector2 {
+  background-image: url(../img/cap2.png);
+  width: 330px;
+  height: 180px;
+  position: absolute;
+  right: 606px;
+  bottom: 320px;
+}
+
+.cap-selector3 {
+  background-image: url(../img/cap3.png);
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  left: 565px;
+  bottom: 240px;
+}
+
+.cap-selector4 {
+  background-image: url(../img/cap4.png);
+  width: 300px;
+  height: 158px;
+  position: absolute;
+  left: 601px;
+  top: 4px;
+}
+
+.cap-selector5 {
+  background-image: url(../img/cap5.png);
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 610px;
+  bottom: 170px;
+}
+
+#cap1 {
+  background-image: url('../img/cap1.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 260px;
+  height: 200px;
+}
+
+#cap2 {
+  background-image: url('../img/cap2.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 260px;
+  height: 180px;
+}
+
+#cap3 {
+  background-image: url('../img/cap3.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 260px;
+  height: 313px;
+}
+
+#cap4 {
+  background-image: url('../img/cap4.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 260px;
+  height: 313px;
+}
+
+#cap5 {
+  background-image: url('../img/cap5.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 390px;
+  height: 333px;
+}
+
+.coat {
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.coat-selector {
+  /* display: none; */
+}
+
+.coat-selector1 {
+  background-image: url(../img/coat1.png);
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 160px;
+  position: absolute;
+  left: 610px;
+  top: 283px;
+}
+
+.coat-selector2 {
+  background-image: url(../img/coat2.png);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  left: 610px;
+  top: 285px;
+}
+
+.coat-selector3 {
+  background-image: url('../img/coat3.png');
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 209px;
+  position: absolute;
+  left: 607px;
+  top: 280px;
+}
+
+.coat-selector4 {
+  background-image: url(../img/coat4.png);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 180px;
+  position: absolute;
+  left: 610px;
+  top: 282px;
+}
+
+#coat1 {
+  background-image: url('../img/coat1.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 380px;
+  height: 160px;
+}
+
+#coat2 {
+  background-image: url('../img/coat2.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 320px;
+  height: 200px;
+}
+
+#coat3 {
+  background-image: url('../img/coat3.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 320px;
+  height: 209px;
+}
+
+#coat4 {
+  background-image: url('../img/coat4.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 320px;
+  height: 209px;
+}
+
+.pants {
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.pants-selector {
+  /* display: none; */
+}
+
+.pants-selector1 {
+  background-image: url(../img/pants1.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 630px;
+  top: 419px;
+}
+
+.pants-selector2 {
+  background-image: url(../img/pants2.png);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 80px;
+  position: absolute;
+  left: 628px;
+  top: 405px;
+}
+
+.pants-selector3 {
+  background-image: url(../img/pants3.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 644px;
+  top: 406px;
+}
+
+#pants1 {
+  background-image: url('../img/pants1.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 250px;
+  height: 103px;
+}
+
+#pants2 {
+  background-image: url('../img/pants2.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 270px;
+  height: 153px;
+}
+
+#pants3 {
+  background-image: url('../img/pants3.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+  width: 250px;
+  height: 153px;
+}
+
+.draggable {
+  cursor: pointer;
+}
+
+.cap-selector {
+  /* opacity: 0.7; */
+  position: absolute;
+  /* background: antiquewhite; */
+  top: -7%;
+  width: 100%;
+  height: 70%;
+  /* TODO ezt kell majd beállítani ha a user rákattint valamelyik részre */
+  background-image: url('../img/cap5.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.coat-selector {
+  /* opacity: 0.7; */
+  position: absolute;
+  top: 58%;
+  /* background: red; */
+  width: 100%;
+  height: 40%;
+  /* TODO ezt kell majd beállítani ha a user rákattint valamelyik részre */
+  background-image: url('../img/coat4.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 2;
+}
+
+.pants-selector {
+  /* opacity: 0.7; */
+  position: absolute;
+  top: 85%;
+  /* background: #fbff06; */
+  width: 100%;
+  height: 15%;
+  /* TODO ezt kell majd beállítani ha a user rákattint valamelyik részre */
+  background-image: url('../img/pants3.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 1;
+}

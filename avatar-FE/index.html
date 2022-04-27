@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<head>
+
+  <title>Avatar Creator </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="resources/css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+    integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources/css/navbar.css">
+  <link rel="stylesheet" href="resources/css/images.css">
+  <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/topnavbar.css">
+  <link rel="stylesheet" href="resources/css/after-login.css">
+  <script src="bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="src/clickevent.js"> </script>
+  <script src="src/removeevent.js"> </script>
+  <script src="src/index.js"> </script>
+  <script src="src/downloadimg.js"> </script>
+  <script src="src/config.js"> </script>
+
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand">Menu</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="profile.html">My profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Avatar creator</a></li>
+           <li class="nav-item"><a class="nav-link" href="home.html">Gallery </a></li>
+          <li class="nav-item"><a class="nav-link" href="mainpage.html">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <canvas id="canvas" class="clothes-selector">
+    <div class="cap-selector">
+      <div class="cap"></div>
+      <!-- <div class="cap-selector1"> </div>
+      <div class="cap-selector2"> </div>
+      <div class="cap-selector3"> </div>
+      <div class="cap-selector4"> </div>
+      <div class="cap-selector5"> </div> -->
+    </div>
+    <div class="coat-selector">
+      <div class="coat"></div>
+      <!-- <div class="coat-selector1"> </div>
+      <div class="coat-selector2"> </div>
+      <div class="coat-selector3"> </div>
+      <div class="coat-selector4"> </div> -->
+    </div>
+    <div class="pants-selector">
+      <div class="pant"></div>
+      <!-- <div class="pants-selector1"> </div>
+      <div class="pants-selector2"> </div>
+      <div class="pants-selector3"> </div> -->
+    </div>
+  </canvas>
+
+  <!-- <button class="retryBtn" onclick="removeCustomStyle()">Retry</button> -->
+  <!-- <button class="saveBtn" onclick="">Save</button> -->
+
+<!-- <canvas id="canvas">
+</canvas> -->
+<!-- <script>
+    const canvas = document.getElementById("canvas");
+    //const ctx = canvas.getContext("2d");
+    const img = new Image();
+    img.src='../img/base.png';
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img,0,0);
+    document.body.appendChild(img);
+
+</script> -->
+  <main>
+    <nav class="floating-menu">
+      <ul class="main-menu">
+        
+        <li>
+          <!-- <button onclick="changeClothes(1)">fej</button>
+          <button onclick="changeClothes(2)">töst</button>
+          <button onclick="changeClothes(3)">lábsz</button> -->
+          <a  class="ripple" onclick="changeClothes(1)"> Head
+            <i class="fas fa-headphones fa-2x">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a  class="ripple" onclick="changeClothes(2)"> Body
+            <i class="fas fa-female fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a  class="ripple" onclick="changeClothes(3)"> Legs
+            <i class="fas fa-paw fa-2x"></i>
+          </a>
+        </li>
+
+        <li>
+          <a id="downloadbtn"  class="ripple" onclick="saveModel()"> Save
+            <i class="fas fa-save"></i>
+          </a>
+        </li>
+
+      </ul>
+      <div class="menu-bg"></div>
+    </nav>
+
+
+    <!-- <div class="cap-container" id="caps">
+      <div class="cap" id="cap1" onclick="selectCap(1)"> </div>
+      <div class="cap" id="cap2" onclick="selectCap(2)"></div>
+      <div class="cap" id="cap3" onclick="selectCap(3)"></div>
+      <div class="cap" id="cap4" onclick="selectCap(4)"></div>
+      <div class="cap" id="cap5" onclick="selectCap(5)"></div>
+
+    </div>
+
+    <div class="coat-container" id="coats">
+      <div class="coat" id="coat1" onclick="selectCoat(1)"></div>
+      <div class="coat" id="coat2" onclick="selectCoat(2)"></div>
+      <div class="coat" id="coat3" onclick="selectCoat(3)"></div>
+      <div class="coat" id="coat4" onclick="selectCoat(4)"></div>
+
+
+    </div>
+
+    <div class="pants-container" id="pants">
+      <div class="pants" id="pants1" onclick="selectPant(1)"></div>
+      <div class="pants" id="pants2" onclick="selectPant(2)"></div>
+      <div class="pants" id="pants3" onclick="selectPant(3)"></div>
+
+    </div> -->
+
+  </main>
+
+
+  <!-- <script src="src/dragndrop.js"> </script> -->
+  <script src="src/home.js"></script>
+
+</body>
+
+</html>

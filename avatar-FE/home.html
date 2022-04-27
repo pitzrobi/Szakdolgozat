@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ 
+        <title>Home</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"/>
+        <link rel="stylesheet" href="resources/css/topnavbar.css">
+        <link rel="stylesheet" href="resources/css/after-login.css"/>
+        <link rel="stylesheet" href="resources/css/mainpage-css/home.css"/>
+        <link rel="stylesheet" href="resources/css/card.css">
+        <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="src/index.js" ></script>
+        <script src="src/permission.js"></script>
+        <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        <script src="src/gallery.js"></script>
+        <script src="src/config.js"></script>
+        
+        
+    </head>
+
+    <body id="page-top" onload="getModels()">
+ 
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="profile.html">My profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Avatar creator</a></li>
+                        <!-- <div class="manager" >
+                        <li class="nav-item"><a class="nav-link" href="usermanager.html">User Manager</a></li>
+                        </div> -->
+                        <li class="nav-item"><a class="nav-link" href="mainpage.html">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div  class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 id="welcome" class="mx-auto my-0 text-uppercase"></h1>
+                        <h2 id="create" class="text-white-50 mx-auto mt-2 mb-5"></h2>
+                        <a id="getStarted" class="btn btn-primary" href="index.html">Get started</a>
+                    </div> 
+                </div> 
+            </div>
+            <div id="row" class="row">
+            <!-- <div class="column">
+                
+                <div class="card" style="width:200px">
+                    <canvas id="canvas">
+                    
+                    </canvas>
+                    <div class="card-body">
+                    <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div> -->
+            
+            </div>
+        </header>
+    
+        
+        <script  src="src/home.js"></script>
+        
+
+    </body>
+</html>

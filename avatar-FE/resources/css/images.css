@@ -1,0 +1,54 @@
+.cap-container {
+  /* position: absolute; */
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+
+#caps {
+  /* position: absolute; */
+}
+
+.coat-container {
+  /* position: absolute; */
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+
+#coats {
+  /* position: absolute; */
+}
+
+.pants-container {
+  /* position: absolute; */
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+
+#pants {
+  /* position: absolute; */
+}
+
+/* .cap-container>div {
+    display: none;
+}
+
+.coat-container>div {
+    display: none;
+}
+
+.pants-container>div {
+    display: none;
+} */
+
+.custom {
+  display: block !important;
+}
