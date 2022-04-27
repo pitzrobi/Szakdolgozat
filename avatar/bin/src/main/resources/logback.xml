@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT"	class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+	<appender name="SRVOUT"	class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>C:/Users/gyakornok/Documents/workspace-spring-tool-suite-4-4.11.0.RELEASE/avatar/.logs/timeBasedlogFile.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">        
+	        <!-- daily rollover -->
+	        <fileNamePattern>C:/Users/gyakornok/Documents/workspace-spring-tool-suite-4-4.11.0.RELEASE/avatar/.logs/timeBasedlogFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+	        <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+		<layout class="ch.qos.logback.classic.html.HTMLLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+
+
+	</appender>
+	<logger name="org.springframework" level="debug" additivity="false">
+		<appender-ref ref="SRVOUT" />
+	</logger>
+    
+    <logger name="com.avatar" level="debug" additivity="false">
+        <appender-ref ref="SRVOUT" />
+    </logger>
+     
+    <root level="error">
+        <appender-ref ref="SRVOUT" />
+    </root>
+
+</configuration>
